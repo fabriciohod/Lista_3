@@ -1,0 +1,222 @@
+Resposta Lista 3
+Aluno: Fabricio Henrique Matricula: 1924070026
+***************************************************************************************************************************************
+******************************************************************************************************************************************************************************************************************************************************************************
+Questão 1: -2 , 1 , 4 ,7
+***************************************************************************************************************************************
+Questão 2: O valor de Z e 17
+***************************************************************************************************************************************
+Questão 3:
+	using System;
+
+	static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o valor da Base do retangulo: ");
+                float b = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor da Altura do retangulo: ");
+                float a = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("A area do retangulo e " + (b * a));
+            Console.WriteLine("O Perimetro do retangulo e " + (2/(b + a)));
+            Console.ReadLine();
+***************************************************************************************************************************************
+Questão 4:
+	namespace ConsoleApp2
+	{
+    	class Program
+    	{
+        	static void Main(string[] args)
+        	{
+            	int i;
+
+            	for(i = 0; i < 1001; i++)
+            	{
+                	Console.WriteLine(i);
+            	}
+            	Console.ReadLine();
+        	}       
+    }
+***************************************************************************************************************************************
+Questão 5:
+	using System;
+
+	namespace ConsoleApp2
+	{
+    	class Program
+    	{
+        	static void Main(string[] args)
+            {
+                int soma = 0;
+
+                for (int i = 1; i <= 1000; i++)
+                {
+                    soma += i;
+                }
+                Console.WriteLine("A soma dos números de 1 a 1000 é: " + soma);
+                Console.ReadLine();
+            }
+	}
+***************************************************************************************************************************************
+Questão 6:
+	using System;
+	namespace ConsoleApp2
+	{
+    	class Program
+    	{
+        	static void Main(string[] args)
+        	{
+            	float i;
+
+            	for(i = 0; i < 101; i++)
+            	{
+                	if(i %3 == 0)
+                	{
+                    	Console.WriteLine(i);
+                	}
+                
+            	}
+            	Console.ReadLine();
+        	}
+    	}
+	}
+***************************************************************************************************************************************
+Questão 7:
+
+class Program
+        {
+            static void Main(string[] args)
+            {
+                float vazio;
+
+                Console.WriteLine("Digite um numero:");
+                    float n1 = float.Parse(Console.ReadLine());
+
+                Console.WriteLine("Digite outro numero:");
+                    float n2 = float.Parse(Console.ReadLine());
+
+                Console.WriteLine("Escolha a operaco + ; - ; * ; /");
+                    string op = Console.ReadLine();
+
+                switch (op)
+                {
+                    case "+":
+                        Console.WriteLine("A soma dos valoeres e " + (n1 + n2));
+                        Console.ReadLine();
+                        break;
+
+                    case "-":
+                        Console.WriteLine("A subtracao dos valores e " + (n1 - n2));
+                        Console.ReadLine();
+                        break;
+
+                    case "*":
+                        Console.WriteLine("A multiplicao dos valores e " + (n1 * n2));
+                        Console.ReadLine();
+                        break;
+
+                    case "/":
+                        Console.WriteLine("A divisao dos valores e " + (n1 / n2));
+                        Console.ReadLine();
+                        break;
+
+                }
+
+            }
+        }
+***************************************************************************************************************************************
+Questão 8:
+static void Main(string[] args)
+        {
+            int[] vetor1 = new int[3];
+            int i;
+            
+            
+            for(i=0; i<3; i++)
+            {
+                Console.WriteLine("Digite um numero: ");
+                vetor1[i] = int.Parse(Console.ReadLine());
+            }
+            ord(vetor1, 3);
+        }
+
+        static void ord(int[] i, int tamanhon)
+        {
+            int vazio, g;
+            
+            for(g=0; g<tamanhon; g++)
+            {
+                if (i[g]>i[g++])
+                {
+                    vazio = i[g];
+                    i[g] = i[g++];
+                }
+            }
+            Console.WriteLine("Os numeros ordenados sao: " + i[0] + "," + i[1] + "," + i[2]);
+            Console.ReadLine();
+        }
+***************************************************************************************************************************************
+Questão 9:static void Main(string[] args)
+        {
+            Console.Write("Digite o seu nome: ");
+                string nome = string.Format(Console.ReadLine());
+
+            Console.Write("Digite a sua idade: ");
+                int idade = int.Parse(Console.ReadLine());
+
+            if (idade >= 5 && idade <= 10)
+            {
+                Console.WriteLine( nome + " pertence a categoria Infantil");
+                Console.ReadLine();
+            }
+            if (idade >= 11 && idade <= 15)
+            {
+                Console.WriteLine(nome + " pertence a categoria Juvenil");
+                Console.ReadLine();
+            }
+            if (idade >= 16 && idade <= 20)
+            {
+                Console.WriteLine(nome + " pertence a categoria Junior");
+                Console.ReadLine();
+            }
+            if (idade >= 21 && idade <= 25)
+            {
+                Console.WriteLine(nome + " pertence a categoria Profissional");
+                Console.ReadLine();
+            }
+        }
+***************************************************************************************************************************************
+Questão 10:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           for(int i = 2; i <= 101; i++)
+            {
+                if(i %2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+                else
+                {
+                    Console.WriteLine(i * -1);
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+
+
+

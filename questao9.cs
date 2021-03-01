@@ -11,14 +11,14 @@ namespace ConsoleApp4
         static void Main(string[] args)
         {
             Console.Write("Digite o seu nome: ");
-                string nome = string.Format(Console.ReadLine());
+            string nome = string.Format(Console.ReadLine());
 
             Console.Write("Digite a sua idade: ");
-                int idade = int.Parse(Console.ReadLine());
+            int idade = int.Parse(Console.ReadLine());
 
             if (idade >= 5 && idade <= 10)
             {
-                Console.WriteLine( nome + " pertence a categoria Infantil");
+                Console.WriteLine(nome + " pertence a categoria Infantil");
                 Console.ReadLine();
             }
             if (idade >= 11 && idade <= 15)

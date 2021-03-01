@@ -17,13 +17,13 @@ namespace ConsoleApp2
                 float vazio;
 
                 Console.WriteLine("Digite um numero:");
-                    float n1 = float.Parse(Console.ReadLine());
+                float n1 = float.Parse(Console.ReadLine());
 
                 Console.WriteLine("Digite outro numero:");
-                    float n2 = float.Parse(Console.ReadLine());
+                float n2 = float.Parse(Console.ReadLine());
 
                 Console.WriteLine("Escolha a operaco + ; - ; * ; /");
-                    string op = Console.ReadLine();
+                string op = Console.ReadLine();
 
                 switch (op)
                 {

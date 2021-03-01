@@ -12,9 +12,9 @@ namespace ConsoleApp3
         {
             int[] vetor1 = new int[3];
             int i;
-            
-            
-            for(i=0; i<3; i++)
+
+
+            for (i = 0; i < 3; i++)
             {
                 Console.WriteLine("Digite um numero: ");
                 vetor1[i] = int.Parse(Console.ReadLine());
@@ -25,10 +25,10 @@ namespace ConsoleApp3
         static void ord(int[] i, int tamanhon)
         {
             int vazio, g;
-            
-            for(g=0; g<tamanhon; g++)
+
+            for (g = 0; g < tamanhon; g++)
             {
-                if (i[g]>i[g++])
+                if (i[g] > i[g++])
                 {
                     vazio = i[g];
                     i[g] = i[g++];
